@@ -1,0 +1,101 @@
+.menu {
+  width: 100%;
+  position: relative;
+}
+
+.menu__items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: @blue;
+}
+
+.menu__blocks {
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.menu__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 17px 0;
+
+  &--active {
+    font-weight: normal;
+  }
+}
+
+.menu__toggle {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  right: 20px;
+  top: 12px;
+  z-index: 10;
+}
+
+.menu__ham {
+  display: none;
+}
+
+.menu__cross-hover {
+  fill: #fff;
+}
+
+.menu__ham-hover {
+  fill: @blue;
+}
+
+//-----------------TABLET--------------------
+
+@media @tablet {
+  .menu__items {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu__link {
+    color: #000;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 15px 0;
+  }
+
+  .menu__blocks {
+    width: 20%;
+    border: none;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .menu__toggle {
+    display: none;
+  }
+}
+
+//-----------------DESKTOP-------------------
+
+@media @desktop {
+
+}

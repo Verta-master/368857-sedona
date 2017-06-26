@@ -1,0 +1,41 @@
+.logo {
+  min-height: 55px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    width: 187px;
+    height: 97px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-93px);
+    z-index: 10;
+  }
+}
+
+.logo__blue,
+.logo__cloud,
+.logo__grid {
+  display: none;
+}
+
+//-----------------TABLET--------------------
+
+@media @tablet {
+  .logo {
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .logo__cloud {
+    display: block;
+  }
+}
+
+//-----------------DESKTOP-------------------
+
+@media @desktop {
+
+}
