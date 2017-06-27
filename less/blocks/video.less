@@ -1,0 +1,143 @@
+.video {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.video__tools {
+  margin: 0 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  width: 280px;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.video__replay,
+.video__sub,
+.video__full {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.video__replay {
+  width: 16px;
+  height: 20px;
+}
+
+.video__sub {
+  width: 22px;
+  height: 20px;
+  margin-left: auto;
+}
+
+.video__full {
+  width: 20px;
+  height: 20px;
+  margin-left: 40px;
+}
+
+.video__hover {
+  fill: #5c6870;
+}
+
+.video__slider {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 280px;
+  height: 45px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 22px;
+  padding-left: 22px;
+}
+
+.video__bar {
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255,255,255,0.2);
+  position: relative;
+}
+
+.video__pull {
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 19px;
+  left: 20%;
+  cursor: pointer;
+}
+
+//-----------------TABLET--------------------
+
+@media @tablet {
+  .video {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .video picture img {
+    width: 100%;
+    height: 499px;
+  }
+
+  .video__tools {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 92px;
+    padding-left: 35px;
+    padding-right: 40px;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .video__hover {
+    fill: #fff;
+  }
+
+  .video__slider {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding-left: 40px;
+  }
+
+  .video__bar {
+    width: 390px;
+  }
+
+  .video__pull {
+    top: 50%;
+    left: 32%;
+    transform: translateY(-4px);
+  }
+}
+
+//-----------------DESKTOP-------------------
+
+@media @desktop {
+  .video {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 85px;
+  }
+
+  .video__pull {
+    left: 25%;
+  }
+}

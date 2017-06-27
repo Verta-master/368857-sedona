@@ -2,6 +2,11 @@
   text-align: center;
   padding-top: 25px;
   color: #000;
+
+  &--internal {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
 
 .descr__title {
@@ -10,6 +15,15 @@
   line-height: 26px;
   font-weight: bold;
   margin-bottom: 27px;
+
+  &--internal {
+    margin-bottom: 22px;
+    font-size: 17px;
+  }
+
+  &--next {
+    margin-top: 5px;
+  }
 }
 
 .descr__text {
@@ -28,15 +42,32 @@
     margin: 0 auto;
     padding-top: 33px;
     padding-bottom: 45px;
+
+    &--internal {
+      padding-top: 50px;
+    }
   }
 
   .descr__title {
     font-size: 21px;
+
+    &--internal {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    &--next {
+      font-size: 30px;
+    }
   }
 }
 
 //-----------------DESKTOP-------------------
 
 @media @desktop {
-
+  .descr {
+    &--internal {
+      padding-top: 30px;
+    }
+  }
 }
