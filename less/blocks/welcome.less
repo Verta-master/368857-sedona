@@ -45,7 +45,7 @@
 
     svg {
       width: 465px;
-      height: auto;
+      height: 354px;
     }
 
     &::after {
@@ -81,5 +81,14 @@
 //-----------------DESKTOP-------------------
 
 @media @desktop {
+  .welcome {
+    &::after {
+      width: 100%;
+      height: 60px;
+    }
 
+    &::before {
+      left: 247px;
+    }
+  }
 }
