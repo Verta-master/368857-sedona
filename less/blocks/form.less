@@ -42,6 +42,16 @@
     text-transform: none;
     opacity: 1;
   }
+
+  input:hover {
+    background-color: @grey-hover;
+  }
+
+  input:focus {
+    background-color: #fff;
+    border: 4px solid @grey-hover;
+    padding: 13px;
+  }
 }
 
 .form__title {
@@ -161,6 +171,26 @@ input[type="radio"]:checked + label::before {
   box-sizing: border-box;
 }
 
+input[type="radio"]:hover + label:hover::before,
+input[type="checkbox"]:hover + label:hover::before {
+  background-color: @grey-hover;
+}
+
+input[type="radio"]:active + label:active::before,
+input[type="checkbox"]:active + label:active::before {
+  background-color: @grey-active;
+}
+
+input[type="radio"]:hover:checked + label:hover::before {
+  background-color: #333333;
+  border-color: @grey-hover;
+}
+
+input[type="radio"]:active:checked + label:active::before {
+  background-color: rgba(51,51,51,0.3);
+  border-color: @grey-active;
+}
+
 .form__visit {
   label {
     text-transform: none;
@@ -210,6 +240,10 @@ input[type="checkbox"]:checked + label::after {
   transform: rotate(-45deg);
 }
 
+input[type="checkbox"]:active:checked + label:active::before {
+  border-color: rgba(51,51,51,0.3);
+}
+
 .form__emotion {
   textarea {
     width: 100%;
@@ -221,6 +255,16 @@ input[type="checkbox"]:checked + label::after {
     font-weight: bold;
     padding: 20px;
     min-height: 160px;
+  }
+
+  textarea:hover {
+    background-color: @grey-hover;
+  }
+
+  textarea:focus {
+    background-color: #fff;
+    border: 4px solid @grey-hover;
+    padding: 16px;
   }
 
   .form__title {
@@ -241,6 +285,19 @@ input[type="checkbox"]:checked + label::after {
   border: none;
   outline: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    color: rgba(255,255,255,0.3);
+    background-color: @blue-active;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__text {
@@ -352,8 +409,10 @@ input[type="checkbox"]:checked + label::after {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    max-height: 170px;
+    width: 100%;
+    height: 170px;
     padding-left: 90px;
+    box-sizing: border-box;
   }
 
   .form__emotion {
