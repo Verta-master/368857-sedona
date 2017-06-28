@@ -386,6 +386,7 @@ picture img {
 body {
   text-transform: uppercase;
   background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 .wrapper-main {
   width: 320px;
@@ -564,7 +565,7 @@ body {
   left: 0;
   width: 100%;
   height: 37px;
-  background-image: url(../../img/bg-triangle.svg);
+  background-image: url(../img/bg-triangle.svg);
   background-repeat: no-repeat;
   z-index: 10;
 }
@@ -1287,7 +1288,6 @@ input[type="checkbox"]:active:checked + label:active::before {
   }
   .city__text {
     width: 33%;
-    max-height: 256px;
     box-sizing: border-box;
     padding-top: 25px;
     padding-left: 32px;
@@ -1453,7 +1453,7 @@ input[type="checkbox"]:active:checked + label:active::before {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 12px;
-    height: 78px;
+    min-height: 78px;
     background-color: #f2f2f2;
     box-sizing: border-box;
     display: -ms-flexbox;
@@ -1466,6 +1466,7 @@ input[type="checkbox"]:active:checked + label:active::before {
         align-items: stretch;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: relative;
   }
   .photo__comment::after {
     display: none;
@@ -1475,6 +1476,9 @@ input[type="checkbox"]:active:checked + label:active::before {
     width: 75%;
   }
   .photo__like {
+    position: absolute;
+    top: 0;
+    right: 20px;
     text-align: right;
     width: 40px;
     margin-left: auto;
