@@ -1626,8 +1626,8 @@ input[type="checkbox"]:active:checked + label:active::before {
   .form__wrap {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -ms-flex-direction: row;
+        flex-direction: row;
     -ms-flex-pack: start;
         justify-content: flex-start;
     -ms-flex-align: start;
